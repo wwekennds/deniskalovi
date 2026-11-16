@@ -1,0 +1,42 @@
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.exe
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.deps.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.g.resources
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\refint\Lab02App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\ref\Lab02App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Login.baml
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab02App\Lab02App\obj\Debug\net10.0-windows\Login.g.cs
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.exe
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.deps.json
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.dll
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\bin\Debug\net10.0-windows\Lab02App.pdb
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Login.baml
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Login.g.cs
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.g.resources
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.dll
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\refint\Lab02App.dll
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.pdb
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\Lab02App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\kurs\Lab02App\Lab02App\obj\Debug\net10.0-windows\ref\Lab02App.dll

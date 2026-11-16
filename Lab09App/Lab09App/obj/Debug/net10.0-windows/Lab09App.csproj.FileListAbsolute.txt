@@ -1,0 +1,44 @@
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App_MarkupCompile.lref
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.exe
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.deps.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.g.resources
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\refint\Lab09App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\ref\Lab09App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.csproj.Up2Date
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App_MarkupCompile.lref
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\refint\Lab09App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.pdb
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.exe
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.deps.json
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\bin\Debug\net10.0-windows\Lab09App.pdb
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.g.resources
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\ref\Lab09App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab09App\Lab09App\obj\Debug\net10.0-windows\Lab09App.csproj.Up2Date

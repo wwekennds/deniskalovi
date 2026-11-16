@@ -1,0 +1,73 @@
+﻿<Window x:Class="Lab03App.PlaceAnOrder"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab03App"
+        mc:Ignorable="d"
+        Title="Оформление заказа" Height="640" Width="480"
+        WindowStartupLocation="CenterScreen"
+        ToolTip="Окно оформления заказа блюд">
+	<Grid Margin="15"
+          ToolTip="Макет окна оформления заказа">
+		<Grid.RowDefinitions>
+			<RowDefinition Height="Auto" ToolTip="Строка для списка блюд"/>
+			<RowDefinition Height="*" ToolTip="Строка для выбора размера порции"/>
+			<RowDefinition Height="Auto" ToolTip="Строка для чаевых"/>
+			<RowDefinition Height="Auto" ToolTip="Строка для кнопки расчёта"/>
+			<RowDefinition Height="Auto" ToolTip="Строка для детализации расчёта"/>
+			<RowDefinition Height="Auto" ToolTip="Строка для итоговой суммы"/>
+			<RowDefinition Height="Auto" ToolTip="Строка для индикатора выполнения"/>
+		</Grid.RowDefinitions>
+
+		<GroupBox Grid.Row="0" Header="Блюда" Padding="5"
+                  ToolTip="Отметьте блюда, которые хотите заказать">
+			<StackPanel x:Name="DishesPanel"
+                        ToolTip="Список блюд с флажками для выбора"/>
+		</GroupBox>
+
+		<GroupBox Grid.Row="1" Header="Размер порции" Padding="5" Margin="0,10,0,0"
+                  ToolTip="Выберите размер порции — цена умножается на коэффициент">
+			<StackPanel ToolTip="Варианты размера порции">
+				<RadioButton x:Name="SmallRadio" Content="Маленькая (×1.0)" IsChecked="True"
+                             ToolTip="Стандартная порция, коэффициент 1.0"/>
+				<RadioButton x:Name="MediumRadio" Content="Средняя (×1.3)"
+                             ToolTip="Увеличенная порция, коэффициент 1.3"/>
+				<RadioButton x:Name="LargeRadio"  Content="Большая (×1.6)"
+                             ToolTip="Максимальная порция, коэффициент 1.6"/>
+			</StackPanel>
+		</GroupBox>
+
+		<GroupBox Grid.Row="2" Header="Чаевые" Padding="5" Margin="0,10,0,0"
+                  ToolTip="Передвиньте ползунок, чтобы задать процент чаевых">
+			<StackPanel ToolTip="Настройка процента чаевых">
+				<Slider x:Name="TipSlider" Minimum="0" Maximum="30"
+                        TickFrequency="5" IsSnapToTickEnabled="True"
+                        ValueChanged="TipSlider_ValueChanged"
+                        ToolTip="Процент чаевых от 0 до 30"/>
+				<TextBlock x:Name="TipText" Text="Чаевые: 0%"
+                           ToolTip="Текущее значение чаевых"/>
+			</StackPanel>
+		</GroupBox>
+
+		<Button Grid.Row="3" Content="Рассчитать" Height="35"
+                Margin="0,10,0,0" Click="Calculate_Click"
+                ToolTip="Нажмите, чтобы рассчитать итоговую сумму"/>
+
+		<TextBlock Grid.Row="4" x:Name="TotalText"
+                   FontSize="18" FontWeight="Bold"
+                   Margin="0,10,0,0" Text="Итого: 0.00 ₽"
+                   ToolTip="Детализация расчёта: сумма по выбранным блюдам с учётом размера порции"/>
+
+		<TextBlock Grid.Row="5" x:Name="PayText"
+                   FontSize="20" FontWeight="Bold"
+                   Foreground="DarkGreen"
+                   Margin="0,10,0,0" Text="К оплате: 0.00 руб."
+                   ToolTip="Итоговая сумма к оплате с учётом чаевых"/>
+
+		<ProgressBar Grid.Row="6" x:Name="Progress"
+                     Height="20" Minimum="0" Maximum="100"
+                     Margin="0,10,0,0" Value="0"
+                     ToolTip="Имитация обработки заказа: 0–100%"/>
+	</Grid>
+</Window>

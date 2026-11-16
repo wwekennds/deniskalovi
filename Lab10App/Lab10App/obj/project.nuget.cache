@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "IAp1920XuaM=",
+  "success": true,
+  "projectFilePath": "C:\\Users\\B-ZONE\\Desktop\\Разработка кода\\Lab10App\\Lab10App\\Lab10App.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\B-ZONE\\.nuget\\packages\\communitytoolkit.mvvm\\8.4.2\\communitytoolkit.mvvm.8.4.2.nupkg.sha512"
+  ],
+  "logs": []
+}

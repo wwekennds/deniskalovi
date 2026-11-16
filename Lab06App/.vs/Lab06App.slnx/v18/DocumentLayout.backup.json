@@ -1,0 +1,56 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "C:\\Users\\B-ZONE\\Desktop\\shalyaev-wpf\\Lab06App\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{5002C3ED-6F07-8074-443D-D27B04F479DA}|Lab06App\\Lab06App.csproj|c:\\users\\b-zone\\desktop\\shalyaev-wpf\\lab06app\\lab06app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{5002C3ED-6F07-8074-443D-D27B04F479DA}|Lab06App\\Lab06App.csproj|solutionrelative:lab06app\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{5002C3ED-6F07-8074-443D-D27B04F479DA}|Lab06App\\Lab06App.csproj|c:\\users\\b-zone\\desktop\\shalyaev-wpf\\lab06app\\lab06app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{5002C3ED-6F07-8074-443D-D27B04F479DA}|Lab06App\\Lab06App.csproj|solutionrelative:lab06app\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{b1e99781-ab81-11d0-b683-00aa00a3ee26}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "C:\\Users\\B-ZONE\\Desktop\\shalyaev-wpf\\Lab06App\\Lab06App\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "Lab06App\\MainWindow.xaml",
+              "ToolTip": "C:\\Users\\B-ZONE\\Desktop\\shalyaev-wpf\\Lab06App\\Lab06App\\MainWindow.xaml",
+              "RelativeToolTip": "Lab06App\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2026-09-20T18:18:48.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "C:\\Users\\B-ZONE\\Desktop\\shalyaev-wpf\\Lab06App\\Lab06App\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "Lab06App\\MainWindow.xaml.cs",
+              "ToolTip": "C:\\Users\\B-ZONE\\Desktop\\shalyaev-wpf\\Lab06App\\Lab06App\\MainWindow.xaml.cs",
+              "RelativeToolTip": "Lab06App\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAAB8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-09-20T18:18:47.193Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

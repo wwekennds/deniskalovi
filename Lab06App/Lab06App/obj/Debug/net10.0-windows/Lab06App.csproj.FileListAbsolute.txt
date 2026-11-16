@@ -1,0 +1,40 @@
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.g.resources
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.exe
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.deps.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\refint\Lab06App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\ref\Lab06App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.csproj.Up2Date
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.exe
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.deps.json
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\bin\Debug\net10.0-windows\Lab06App.pdb
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.g.resources
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\refint\Lab06App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.pdb
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\ref\Lab06App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab06App\Lab06App\obj\Debug\net10.0-windows\Lab06App.csproj.Up2Date

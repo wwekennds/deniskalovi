@@ -1,0 +1,505 @@
+﻿<Window x:Class="Lab06App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Lab06App — Карточка товара + кнопки-иконки + CheckBox"
+        Height="760" Width="860"
+        WindowStartupLocation="CenterScreen"
+        Background="#F2F4F8">
+
+    <Window.Resources>
+
+        <!-- ============================================================
+             Кнопка «Купить» — основной шаблон (скруглённый Border + тень)
+             ============================================================ -->
+        <Style x:Key="BuyButtonStyle" TargetType="Button">
+            <Setter Property="Background" Value="#2D6CB5"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Padding" Value="16,10"/>
+            <Setter Property="Margin" Value="0,12,0,0"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid>
+                            <!-- 1. Слой внутренней тени — САМЫЙ НИЖНИЙ. Мышь до него не дойдёт,
+                потому что выше лежат border и ContentPresenter. -->
+                            <Border x:Name="innerShadow"
+                CornerRadius="8">
+                                <Border.Background>
+                                    <LinearGradientBrush StartPoint="0,0" EndPoint="0,1">
+                                        <GradientStop Color="#55000000" Offset="0.0"/>
+                                        <GradientStop Color="#00000000" Offset="0.45"/>
+                                        <GradientStop Color="#00000000" Offset="0.55"/>
+                                        <GradientStop Color="#33FFFFFF" Offset="1.0"/>
+                                    </LinearGradientBrush>
+                                </Border.Background>
+                            </Border>
+
+                            <!-- 2. Основной фон кнопки — поверх тени. Он и будет ловить клики. -->
+                            <Border x:Name="border"
+                Background="{TemplateBinding Background}"
+                CornerRadius="8"
+                BorderThickness="1"
+                BorderBrush="#1F4E8C"/>
+
+                            <!-- 3. Контент — самый верхний. -->
+                            <ContentPresenter HorizontalAlignment="Center"
+                          VerticalAlignment="Center"
+                          Margin="{TemplateBinding Padding}"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="border" Property="Opacity" Value="0.9"/>
+                            </Trigger>
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="border" Property="Background" Value="#1F4E8C"/>
+                            </Trigger>
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="border" Property="Background" Value="#AAAAAA"/>
+                                <Setter TargetName="innerShadow" Property="Opacity" Value="0.4"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Ключевой стиль карточки товара (Border) -->
+        <Style x:Key="ProductCardStyle" TargetType="Border">
+            <Setter Property="Background" Value="White"/>
+            <Setter Property="BorderBrush" Value="#E1E6EF"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="CornerRadius" Value="14"/>
+            <Setter Property="Padding" Value="20"/>
+            <Setter Property="Margin" Value="12"/>
+            <Setter Property="Width" Value="240"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+            <Setter Property="Effect">
+                <Setter.Value>
+                    <DropShadowEffect Color="#000000"
+                                      Opacity="0.18"
+                                      BlurRadius="18"
+                                      ShadowDepth="4"
+                                      Direction="270"/>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- Заголовок карточки -->
+        <Style x:Key="CardTitleStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="13"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#1F4E8C"/>
+            <Setter Property="TextTrimming" Value="CharacterEllipsis"/>
+            <Setter Property="Margin" Value="0,0,0,4"/>
+        </Style>
+
+        <!-- Наименование товара -->
+        <Style x:Key="ProductNameStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="16"/>
+            <Setter Property="FontWeight" Value="SemiBold"/>
+            <Setter Property="Foreground" Value="#222222"/>
+            <Setter Property="TextWrapping" Value="Wrap"/>
+            <Setter Property="Margin" Value="0,0,0,10"/>
+        </Style>
+
+        <!-- Цена -->
+        <Style x:Key="PriceStyle" TargetType="TextBlock">
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Bold"/>
+            <Setter Property="Foreground" Value="#2D6CB5"/>
+        </Style>
+
+        <!-- ============================================================
+             Кнопка-иконка: квадратная, круглый фон,
+             содержимое — символ из Segoe UI Symbol
+             ============================================================ -->
+        <Style x:Key="IconButtonStyle" TargetType="Button">
+            <Setter Property="Width" Value="44"/>
+            <Setter Property="Height" Value="44"/>
+            <Setter Property="Padding" Value="0"/>
+            <Setter Property="Margin" Value="6"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Foreground" Value="White"/>
+            <Setter Property="Background" Value="#2D6CB5"/>
+            <Setter Property="FontFamily" Value="Segoe UI Symbol"/>
+            <Setter Property="FontSize" Value="20"/>
+            <Setter Property="FontWeight" Value="Normal"/>
+            <Setter Property="HorizontalContentAlignment" Value="Center"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button">
+                        <Grid Width="{TemplateBinding Width}"
+                              Height="{TemplateBinding Height}"
+                              Background="Transparent">
+
+                            <Ellipse x:Name="circle"
+                                     Fill="{TemplateBinding Background}"
+                                     Stroke="#1F4E8C"
+                                     StrokeThickness="1"
+                                     HorizontalAlignment="Stretch"
+                                     VerticalAlignment="Stretch"/>
+
+                            <Ellipse x:Name="innerShadow"
+                                     IsHitTestVisible="False">
+                                <Ellipse.Fill>
+                                    <RadialGradientBrush GradientOrigin="0.5,0.35"
+                                                         Center="0.5,0.5"
+                                                         RadiusX="0.75"
+                                                         RadiusY="0.75">
+                                        <GradientStop Color="#00000000" Offset="0.55"/>
+                                        <GradientStop Color="#55000000" Offset="1.0"/>
+                                    </RadialGradientBrush>
+                                </Ellipse.Fill>
+                            </Ellipse>
+
+                            <ContentPresenter HorizontalAlignment="Center"
+                                              VerticalAlignment="Center"
+                                              Margin="{TemplateBinding Padding}"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="IsMouseOver" Value="True">
+                                <Setter TargetName="circle" Property="Fill" Value="#3A82CE"/>
+                                <Setter TargetName="innerShadow" Property="Opacity" Value="0.6"/>
+                            </Trigger>
+
+                            <Trigger Property="IsPressed" Value="True">
+                                <Setter TargetName="circle" Property="Fill" Value="#1F4E8C"/>
+                                <Setter TargetName="innerShadow" Property="Opacity" Value="1.0"/>
+                            </Trigger>
+
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="circle" Property="Fill" Value="#AAAAAA"/>
+                                <Setter TargetName="circle" Property="Stroke" Value="#888888"/>
+                                <Setter TargetName="innerShadow" Property="Opacity" Value="0.3"/>
+                                <Setter Property="Opacity" Value="0.7"/>
+                                <Setter Property="Cursor" Value="Arrow"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+        <!-- ============================================================
+             ЗАДАНИЕ 3: Нестандартный CheckBox
+             Квадрат со скруглением; при IsChecked=True — галка символом
+             ============================================================ -->
+        <Style x:Key="RoundedCheckBoxStyle" TargetType="CheckBox">
+            <Setter Property="Foreground" Value="#222222"/>
+            <Setter Property="FontSize" Value="14"/>
+            <Setter Property="FontFamily" Value="Segoe UI"/>
+            <Setter Property="Cursor" Value="Hand"/>
+            <Setter Property="Margin" Value="4,6"/>
+            <Setter Property="VerticalContentAlignment" Value="Center"/>
+            <Setter Property="SnapsToDevicePixels" Value="True"/>
+
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="CheckBox">
+                        <Grid Background="Transparent">
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="Auto"/>
+                                <ColumnDefinition Width="*"/>
+                            </Grid.ColumnDefinitions>
+
+                            <!-- Индикатор: квадрат со скруглением -->
+                            <Border x:Name="box"
+                                    Width="22" Height="22"
+                                    CornerRadius="6"
+                                    Background="White"
+                                    BorderBrush="#B9C4D4"
+                                    BorderThickness="2"
+                                    VerticalAlignment="Center"
+                                    SnapsToDevicePixels="True">
+
+                                <!-- Галка-символ (Segoe MDL2 Assets: E73E) -->
+                                <TextBlock x:Name="check"
+                                           Text="&#xE73E;"
+                                           FontFamily="Segoe MDL2 Assets"
+                                           FontSize="14"
+                                           FontWeight="Bold"
+                                           Foreground="White"
+                                           HorizontalAlignment="Center"
+                                           VerticalAlignment="Center"
+                                           Visibility="Collapsed"/>
+                            </Border>
+
+                            <!-- Подпись -->
+                            <ContentPresenter Grid.Column="1"
+                                              Margin="10,0,0,0"
+                                              VerticalAlignment="Center"
+                                              HorizontalAlignment="Left"
+                                              RecognizesAccessKey="True"/>
+                        </Grid>
+
+                        <ControlTemplate.Triggers>
+
+                            <!-- ===== Установлен (IsChecked=True) ===== -->
+                            <Trigger Property="IsChecked" Value="True">
+                                <Setter TargetName="box" Property="Background" Value="#2D6CB5"/>
+                                <Setter TargetName="box" Property="BorderBrush" Value="#1F4E8C"/>
+                                <Setter TargetName="check" Property="Visibility" Value="Visible"/>
+                            </Trigger>
+
+                            <!-- ===== Не установлен (IsChecked=False) ===== -->
+                            <Trigger Property="IsChecked" Value="False">
+                                <Setter TargetName="box" Property="Background" Value="White"/>
+                                <Setter TargetName="box" Property="BorderBrush" Value="#B9C4D4"/>
+                                <Setter TargetName="check" Property="Visibility" Value="Collapsed"/>
+                            </Trigger>
+
+                            <!-- ===== Неопределённое состояние (IsChecked={x:Null}) ===== -->
+                            <Trigger Property="IsChecked" Value="{x:Null}">
+                                <Setter TargetName="box" Property="Background" Value="#E6EEF9"/>
+                                <Setter TargetName="box" Property="BorderBrush" Value="#2D6CB5"/>
+                                <Setter TargetName="check" Property="Visibility" Value="Collapsed"/>
+                            </Trigger>
+
+                            <!-- Наведение (только когда не установлен) -->
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                    <Condition Property="IsChecked" Value="False"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="box" Property="BorderBrush" Value="#2D6CB5"/>
+                                <Setter TargetName="box" Property="Background" Value="#F4F8FD"/>
+                            </MultiTrigger>
+
+                            <!-- Наведение при установленном -->
+                            <MultiTrigger>
+                                <MultiTrigger.Conditions>
+                                    <Condition Property="IsMouseOver" Value="True"/>
+                                    <Condition Property="IsChecked" Value="True"/>
+                                </MultiTrigger.Conditions>
+                                <Setter TargetName="box" Property="Background" Value="#3A82CE"/>
+                            </MultiTrigger>
+
+                            <!-- Отключён -->
+                            <Trigger Property="IsEnabled" Value="False">
+                                <Setter TargetName="box" Property="Background" Value="#EFEFEF"/>
+                                <Setter TargetName="box" Property="BorderBrush" Value="#CCCCCC"/>
+                                <Setter TargetName="check" Property="Foreground" Value="#AAAAAA"/>
+                                <Setter Property="Foreground" Value="#999999"/>
+                                <Setter Property="Cursor" Value="Arrow"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+
+    </Window.Resources>
+
+    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+
+        <!-- ================================================================
+             Ряд карточек товара (Задание 1)
+             ================================================================ -->
+        <WrapPanel HorizontalAlignment="Center">
+
+            <!-- ===== Карточка 1 ===== -->
+            <Border Style="{StaticResource ProductCardStyle}">
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="НОВИНКА"
+                                   Style="{StaticResource CardTitleStyle}"
+                                   VerticalAlignment="Center"/>
+
+                        <Button Grid.Column="1"
+                                Style="{StaticResource IconButtonStyle}"
+                                Width="32" Height="32"
+                                FontSize="14"
+                                Background="#FFFFFF"
+                                Foreground="#E04B5A"
+                                Content="&#xEB51;"
+                                FontFamily="Segoe MDL2 Assets"
+                                ToolTip="В избранное"
+                                Click="OnIconClick"
+                                Tag="Добавлено в избранное: Ноутбук Aurora X15"/>
+                    </Grid>
+
+                    <TextBlock Text="Ноутбук Aurora X15"
+                               Style="{StaticResource ProductNameStyle}"/>
+
+                    <TextBlock Text="89 990 ₽" Style="{StaticResource PriceStyle}"/>
+
+                    <Button Content="Купить"
+                            Style="{StaticResource BuyButtonStyle}"
+                            Click="OnBuyClick"
+                            Tag="Ноутбук Aurora X15"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ===== Карточка 2 ===== -->
+            <Border Style="{StaticResource ProductCardStyle}">
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="ХИТ ПРОДАЖ"
+                                   Style="{StaticResource CardTitleStyle}"
+                                   VerticalAlignment="Center"/>
+
+                        <Button Grid.Column="1"
+                                Style="{StaticResource IconButtonStyle}"
+                                Width="32" Height="32"
+                                FontSize="14"
+                                Background="#FFFFFF"
+                                Foreground="#E04B5A"
+                                Content="&#xEB51;"
+                                FontFamily="Segoe MDL2 Assets"
+                                ToolTip="В избранное"
+                                Click="OnIconClick"
+                                Tag="Добавлено в избранное: Смартфон Nebula S22"/>
+                    </Grid>
+
+                    <TextBlock Text="Смартфон Nebula S22"
+                               Style="{StaticResource ProductNameStyle}"/>
+
+                    <TextBlock Text="54 500 ₽" Style="{StaticResource PriceStyle}"/>
+
+                    <Button Content="Купить"
+                            Style="{StaticResource BuyButtonStyle}"
+                            Click="OnBuyClick"
+                            Tag="Смартфон Nebula S22"/>
+                </StackPanel>
+            </Border>
+
+            <!-- ===== Карточка 3 (нет в наличии) ===== -->
+            <Border Style="{StaticResource ProductCardStyle}">
+                <StackPanel>
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="*"/>
+                            <ColumnDefinition Width="Auto"/>
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="СКОРО"
+                                   Style="{StaticResource CardTitleStyle}"
+                                   VerticalAlignment="Center"/>
+
+                        <Button Grid.Column="1"
+                                Style="{StaticResource IconButtonStyle}"
+                                Width="32" Height="32"
+                                FontSize="14"
+                                Background="#FFFFFF"
+                                Foreground="#E04B5A"
+                                Content="&#xEB51;"
+                                FontFamily="Segoe MDL2 Assets"
+                                ToolTip="В избранное"
+                                IsEnabled="False"/>
+                    </Grid>
+
+                    <TextBlock Text="Наушники Echo Pro"
+                               Style="{StaticResource ProductNameStyle}"/>
+
+                    <TextBlock Text="12 990 ₽" Style="{StaticResource PriceStyle}"/>
+
+                    <Button Content="Купить"
+                            Style="{StaticResource BuyButtonStyle}"
+                            Click="OnBuyClick"
+                            Tag="Наушники Echo Pro"
+                            IsEnabled="False"/>
+                </StackPanel>
+            </Border>
+
+        </WrapPanel>
+
+        <!-- ================================================================
+             Демонстрация кнопок-иконок (Задание 2)
+             ================================================================ -->
+        <TextBlock Text="Кнопки-иконки (Segoe UI Symbol / MDL2)"
+                   FontSize="14" FontWeight="SemiBold"
+                   HorizontalAlignment="Center"
+                   Foreground="#444444"
+                   Margin="0,24,0,4"/>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+
+            <Button Style="{StaticResource IconButtonStyle}"
+                    Content="+"
+                    ToolTip="Добавить"
+                    Click="OnIconClick"
+                    Tag="Добавить"/>
+
+            <Button Style="{StaticResource IconButtonStyle}"
+                    Content="−"
+                    ToolTip="Удалить"
+                    Click="OnIconClick"
+                    Tag="Удалить"/>
+
+            <Button Style="{StaticResource IconButtonStyle}"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="&#xE74D;"
+                    ToolTip="В корзину"
+                    Click="OnIconClick"
+                    Tag="Добавить в корзину"/>
+
+            <Button Style="{StaticResource IconButtonStyle}"
+                    FontFamily="Segoe MDL2 Assets"
+                    Content="&#xEB51;"
+                    ToolTip="В избранное"
+                    Click="OnIconClick"
+                    Tag="Добавить в избранное"/>
+
+            <Button Style="{StaticResource IconButtonStyle}"
+                    Content="+"
+                    IsEnabled="False"
+                    ToolTip="Недоступно"/>
+        </StackPanel>
+
+        <!-- ================================================================
+             Демонстрация CheckBox (Задание 3)
+             ================================================================ -->
+        <TextBlock Text="CheckBox с нестандартным индикатором"
+                   FontSize="14" FontWeight="SemiBold"
+                   HorizontalAlignment="Center"
+                   Foreground="#444444"
+                   Margin="0,28,0,6"/>
+
+        <StackPanel Orientation="Horizontal"
+                    HorizontalAlignment="Center">
+
+            <!-- Обычный установленный -->
+            <CheckBox Style="{StaticResource RoundedCheckBoxStyle}"
+                      Content="Согласен с условиями"
+                      IsChecked="True"
+                      Margin="8,0"/>
+
+            <!-- Снятый -->
+            <CheckBox Style="{StaticResource RoundedCheckBoxStyle}"
+                      Content="Получать рассылку"
+                      Margin="8,0"/>
+
+            <!-- Неопределённое состояние -->
+            <CheckBox Style="{StaticResource RoundedCheckBoxStyle}"
+                      Content="Выбрать все"
+                      IsThreeState="True"
+                      IsChecked="{x:Null}"
+                      Margin="8,0"/>
+
+            <!-- Отключённый -->
+            <CheckBox Style="{StaticResource RoundedCheckBoxStyle}"
+                      Content="Недоступно"
+                      IsEnabled="False"
+                      Margin="8,0"/>
+
+        </StackPanel>
+
+    </StackPanel>
+</Window>

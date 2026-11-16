@@ -1,0 +1,44 @@
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App_MarkupCompile.lref
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\refint\Lab11App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.exe
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.deps.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.pdb
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.g.resources
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\ref\Lab11App.dll
+C:\Users\B-ZONE\Desktop\Разработка кода\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.csproj.Up2Date
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.exe
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.deps.json
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.runtimeconfig.json
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\bin\Debug\net10.0-windows\Lab11App.pdb
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\MainWindow.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\App.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\GeneratedInternalTypeHelper.g.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App_MarkupCompile.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App_MarkupCompile.lref
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\MainWindow.baml
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.g.resources
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.AssemblyInfoInputs.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.AssemblyInfo.cs
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.csproj.CoreCompileInputs.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\refint\Lab11App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.pdb
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.genruntimeconfig.cache
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\ref\Lab11App.dll
+C:\Users\B-ZONE\Desktop\shalyaev-wpf\Lab11App\Lab11App\obj\Debug\net10.0-windows\Lab11App.csproj.Up2Date

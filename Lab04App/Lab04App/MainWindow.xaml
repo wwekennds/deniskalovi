@@ -1,0 +1,131 @@
+﻿<Window x:Class="Lab04App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Lab04App"
+        mc:Ignorable="d"
+        Closing="Window_Closing"
+        Title="Регистрация" Height="520" Width="480"
+        WindowStartupLocation="CenterScreen"
+        ResizeMode="CanResize"
+        ToolTip="Форма регистрации нового пользователя">
+    <Grid Margin="20"
+          ToolTip="Макет формы регистрации">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" ToolTip="Заголовок формы"/>
+            <RowDefinition Height="Auto" ToolTip="Поле ввода имени"/>
+            <RowDefinition Height="Auto" ToolTip="Поле ввода электронной почты"/>
+            <RowDefinition Height="Auto" ToolTip="Поле ввода возраста"/>
+            <RowDefinition Height="Auto" ToolTip="Поле ввода пароля"/>
+            <RowDefinition Height="Auto" ToolTip="Поле повторного ввода пароля"/>
+            <RowDefinition Height="Auto" ToolTip="Флажок согласия"/>
+            <RowDefinition Height="Auto" ToolTip="Кнопка регистрации"/>
+            <RowDefinition Height="*"    ToolTip="Свободное место"/>
+        </Grid.RowDefinitions>
+
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="140" ToolTip="Колонка подписей полей"/>
+            <ColumnDefinition Width="*"   ToolTip="Колонка полей ввода"/>
+            <ColumnDefinition Width="Auto" ToolTip="Колонка для года рождения"/>
+        </Grid.ColumnDefinitions>
+
+        <TextBlock Grid.Row="0" Grid.Column="0" Grid.ColumnSpan="3"
+                   Text="Регистрация"
+                   FontSize="22" FontWeight="Bold"
+                   HorizontalAlignment="Center"
+                   Margin="0,0,0,16"
+                   ToolTip="Заголовок формы регистрации"/>
+
+        <TextBlock Grid.Row="1" Grid.Column="0"
+                   Text="Имя:"
+                   VerticalAlignment="Center"
+                   Margin="0,0,10,10"
+                   ToolTip="Подпись поля «Имя»"/>
+        <TextBox Grid.Row="1" Grid.Column="1" Grid.ColumnSpan="2"
+                 x:Name="NameBox"
+                 Margin="0,0,0,10"
+                 ToolTip="Введите ваше имя"
+                 MaxLength="30"/>
+
+        <TextBlock Grid.Row="2" Grid.Column="0"
+                   Text="Электронная почта:"
+                   VerticalAlignment="Center"
+                   Margin="0,0,10,10"
+                   ToolTip="Подпись поля «Электронная почта»"/>
+        <TextBox Grid.Row="2" Grid.Column="1" Grid.ColumnSpan="2"
+                 x:Name="EmailBox"
+                 Margin="0,0,0,10"
+                 ToolTip="Введите адрес электронной почты, например user@mail.ru"
+                 MaxLength="40"/>
+
+        <TextBlock Grid.Row="3" Grid.Column="0"
+                   Text="Возраст:"
+                   VerticalAlignment="Center"
+                   Margin="0,0,10,10"
+                   ToolTip="Подпись поля «Возраст»"/>
+        <TextBox Grid.Row="3" Grid.Column="1"
+                 x:Name="AgeBox"
+                 Margin="0,0,10,10"
+                 TextChanged="AgeBox_TextChanged"
+                 ToolTip="Введите ваш возраст (целое число)"
+                 MaxLength="3"/>
+        <TextBlock Grid.Row="3" Grid.Column="2"
+                   x:Name="BirthYearText"
+                   Text=""
+                   VerticalAlignment="Center"
+                   Foreground="Gray"
+                   Margin="0,0,0,10"
+                   ToolTip="Год рождения, рассчитанный автоматически"/>
+
+        <TextBlock Grid.Row="4" Grid.Column="0"
+                   Text="Пароль:"
+                   VerticalAlignment="Center"
+                   Margin="0,0,10,10"
+                   ToolTip="Подпись поля «Пароль»"/>
+        <PasswordBox Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+                     x:Name="PasswordBox"
+                     Margin="0,0,0,10"
+                     ToolTip="Введите пароль (не менее 6 символов)"
+                     MaxLength="40" PasswordChanged="PasswordBox_PasswordChanged"/>
+        <TextBlock Grid.Row="4" Grid.Column="1" Grid.ColumnSpan="2"
+           x:Name="PasswordStrengthText"
+           Text=""
+           FontSize="12"
+           FontWeight="Bold"
+           Margin="0,0,0,10"
+           VerticalAlignment="Bottom"
+           HorizontalAlignment="Right"
+           ToolTip="Уровень надёжности пароля"/>
+
+        <TextBlock Grid.Row="5" Grid.Column="0"
+                   Text="Повтор пароля:"
+                   VerticalAlignment="Center"
+                   Margin="0,0,10,10"
+                   ToolTip="Подпись поля «Повтор пароля»"/>
+        <PasswordBox Grid.Row="5" Grid.Column="1" Grid.ColumnSpan="2"
+                     x:Name="ConfirmBox"
+                     Margin="0,0,0,10"
+                     ToolTip="Повторите пароль ещё раз"
+                     MaxLength="40"/>
+
+        <CheckBox Grid.Row="6" Grid.Column="0" Grid.ColumnSpan="3"
+                  x:Name="AgreeCheck"
+                  Content="Я согласен с условиями регистрации"
+                  Margin="0,6,0,16"
+                  ToolTip="Отметьте, чтобы подтвердить согласие с условиями" 
+                  Checked="AgreeCheck_Checked" 
+                  HorizontalAlignment="Left"  
+                  IsChecked="False" 
+                  Unchecked="AgreeCheck_Unchecked"/>
+
+        <Button Grid.Row="7" Grid.Column="0" Grid.ColumnSpan="3"
+                x:Name="RegisterButton"
+                Content="Зарегистрироваться"
+                Height="36"
+                HorizontalAlignment="Stretch"
+                ToolTip="Нажмите, чтобы завершить регистрацию"
+                Click="RegisterButton_Click"
+                IsEnabled="False"/>
+    </Grid>
+</Window>

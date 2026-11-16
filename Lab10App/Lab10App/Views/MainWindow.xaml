@@ -1,0 +1,84 @@
+﻿<Window x:Class="Lab10App.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:conv="clr-namespace:Lab10App.Converters"
+        Title="Список задач" Height="420" Width="560"
+        WindowStartupLocation="CenterScreen">
+
+    <Window.Resources>
+        <conv:BoolToBrushConverter x:Key="BoolToBrush"/>
+        <conv:DateToRelativeStringConverter x:Key="DateToRelative"/>
+    </Window.Resources>
+
+    <Grid Margin="12">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+
+        <StackPanel Grid.Row="0" Orientation="Horizontal">
+            <TextBox Width="180"
+                     Text="{Binding NewTaskTitle,
+                            UpdateSourceTrigger=PropertyChanged}"/>
+            <ComboBox Width="60" Margin="4,0"
+                      SelectedIndex="{Binding NewTaskPriority}">
+                <ComboBoxItem Content="1"/>
+                <ComboBoxItem Content="2"/>
+                <ComboBoxItem Content="3"/>
+            </ComboBox>
+            <Button Content="Добавить"
+                    Command="{Binding AddCommand}"/>
+            <Button Content="Удалить"
+                    Command="{Binding DeleteCommand}"
+                    CommandParameter="{Binding SelectedItem, ElementName=TaskList}"
+                    Margin="4,0,0,0"/>
+            <Button Content="Отметить выполненной"
+                    Command="{Binding MarkDoneCommand}"
+                    CommandParameter="{Binding SelectedItem, ElementName=TaskList}"
+                    Margin="4,0,0,0"/>
+        </StackPanel>
+
+        <ListBox x:Name="TaskList" Grid.Row="1" Margin="0,8"
+                 ItemsSource="{Binding Todos}">
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <CheckBox IsChecked="{Binding IsDone}"
+                                  Margin="0,0,8,0"/>
+                        <TextBlock Text="{Binding Title}"
+                                   Margin="0,0,8,0"
+                                   Foreground="{Binding IsDone,
+                                       Converter={StaticResource BoolToBrush}}"/>
+                        <TextBlock Text="{Binding Priority, StringFormat='[{0}]'}"
+                                   FontWeight="Bold">
+                            <TextBlock.Style>
+                                <Style TargetType="TextBlock">
+                                    <Style.Triggers>
+                                        <DataTrigger Binding="{Binding Priority}" Value="1">
+                                            <Setter Property="Foreground" Value="Green"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Priority}" Value="2">
+                                            <Setter Property="Foreground" Value="Goldenrod"/>
+                                        </DataTrigger>
+                                        <DataTrigger Binding="{Binding Priority}" Value="3">
+                                            <Setter Property="Foreground" Value="Red"/>
+                                        </DataTrigger>
+                                    </Style.Triggers>
+                                </Style>
+                            </TextBlock.Style>
+                        </TextBlock>
+                        <TextBlock Text="{Binding CreatedAt,
+                                  Converter={StaticResource DateToRelative}}"
+                                   Margin="8,0,0,0"
+                                   Foreground="#666666"
+                                   FontStyle="Italic"/>
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+
+        <TextBlock Grid.Row="2" FontWeight="Bold"
+           Text="{Binding Summary}"/>
+    </Grid>
+</Window>

@@ -1,0 +1,87 @@
+﻿<Window x:Class="Lab03App.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Анкета студента" Height="640" Width="422"
+        WindowStartupLocation="CenterScreen">
+	<StackPanel Margin="16">
+		<TextBlock Text="Фамилия:"
+                   ToolTip="Подпись поля для ввода фамилии студента"/>
+		<TextBox x:Name="SurnameBox"
+                 ToolTip="Введите фамилию студента"/>
+		<TextBlock Text="Имя:" Margin="0,8,0,0"
+                   ToolTip="Подпись поля для ввода имени студента"/>
+		<TextBox x:Name="NameBox"
+                 ToolTip="Введите имя студента"/>
+		<TextBlock Text="День:" Margin="0,8,0,0"
+                   ToolTip="Подпись поля для выбора дня рождения"/>
+		<ComboBox x:Name="DaySelect" SelectedIndex="0"
+                  ToolTip="Выберите день рождения (1–31)"/>
+
+		<TextBlock Text="Месяц:" Margin="0,8,0,0"
+                   ToolTip="Подпись поля для выбора месяца рождения"/>
+		<ComboBox x:Name="MonthSelect" SelectedIndex="0"
+                  ToolTip="Выберите месяц рождения (1–12)"/>
+
+		<TextBlock Text="Год:" Margin="0,8,0,0"
+                   ToolTip="Подпись поля для выбора года рождения"/>
+		<ComboBox x:Name="YearSelect" SelectedIndex="0"
+                  ToolTip="Выберите год рождения (1970–2026)"/>
+
+		<TextBlock Text="Группа:" Margin="0,8,0,0"
+                   ToolTip="Подпись поля для выбора группы"/>
+		<ComboBox x:Name="GroupSelect" SelectedIndex="0"
+                  ToolTip="Выберите номер группы">
+			<ComboBoxItem Content="314" ToolTip="Группа 314"/>
+			<ComboBoxItem Content="315" ToolTip="Группа 315"/>
+			<ComboBoxItem Content="316" ToolTip="Группа 316"/>
+		</ComboBox>
+
+		<GroupBox Header="Курс" Margin="0,8,0,0"
+                  ToolTip="Выберите курс обучения">
+			<StackPanel Orientation="Horizontal">
+				<RadioButton x:Name="Course1" Content="1" GroupName="Course"
+                             Margin="0,0,16,0" IsChecked="True"
+                             ToolTip="Первый курс"/>
+				<RadioButton x:Name="Course2" Content="2" GroupName="Course"
+                             Margin="0,0,16,0"
+                             ToolTip="Второй курс"/>
+				<RadioButton x:Name="Course3" Content="3" GroupName="Course"
+                             Margin="0,0,16,0"
+                             ToolTip="Третий курс"/>
+				<RadioButton x:Name="Course4" Content="4" GroupName="Course"
+                             ToolTip="Четвёртый курс"/>
+			</StackPanel>
+		</GroupBox>
+
+		<GroupBox Header="Пол" Margin="0,8,0,0"
+                  ToolTip="Укажите пол студента">
+			<StackPanel Orientation="Horizontal">
+				<RadioButton x:Name="Man" Content="Мужской" GroupName="Pol"
+                             Margin="0,0,16,0" IsChecked="True"
+                             ToolTip="Мужской пол"/>
+				<RadioButton x:Name="Woman" Content="Женский" GroupName="Pol"
+                             Margin="0,0,16,0"
+                             ToolTip="Женский пол"/>
+			</StackPanel>
+		</GroupBox>
+
+		<CheckBox x:Name="LaptopCheck" Content="Есть ноутбук"
+                  Margin="0,8,0,0"
+                  ToolTip="Отметьте, если у студента есть ноутбук"/>
+		<TextBlock Text="Уровень подготовки:" Margin="0,8,0,0"
+                   ToolTip="Подпись для ползунка уровня подготовки"/>
+		<Slider x:Name="LevelSlider" Minimum="0" Maximum="10"
+                IsSnapToTickEnabled="True" TickFrequency="1"
+                ToolTip="Установите уровень подготовки от 0 до 10"/>
+		<Button Content="Показать сводку" Margin="0,12,0,0"
+                Click="ShowButton_Click"
+                ToolTip="Сформировать и показать сводку по введённым данным"/>
+		<Button Content="Оформить заказ" Margin="0,12,0,0"
+                Click="OrderButton_Click"
+                ToolTip="Открыть окно оформления заказа"/>
+		<TextBox x:Name="SummaryBox" Margin="0,12,0,0" Height="120"
+                 IsReadOnly="True" TextWrapping="Wrap"
+                 VerticalScrollBarVisibility="Auto"
+                 ToolTip="Здесь отображается итоговая сводка по анкете"/>
+	</StackPanel>
+</Window>

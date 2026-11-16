@@ -1,0 +1,19 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+
+    <SolidColorBrush x:Key="PrimaryBrush"     Color="#5B9BE6"/>
+    <SolidColorBrush x:Key="PrimaryDarkBrush" Color="#3978C2"/>
+    <SolidColorBrush x:Key="DangerBrush"      Color="#D95C5C"/>
+
+    <SolidColorBrush x:Key="HeaderBrush"      Color="#9CC5F2"/>
+    <SolidColorBrush x:Key="LabelBrush"       Color="#E2E8F0"/>
+
+    <SolidColorBrush x:Key="WindowBackground" Color="#18212B"/>
+    <SolidColorBrush x:Key="InputBackground"  Color="#243140"/>
+    <SolidColorBrush x:Key="InputForeground"  Color="#F5F7FA"/>
+    <SolidColorBrush x:Key="InputBorderBrush" Color="#526477"/>
+    <SolidColorBrush x:Key="DisabledBrush"    Color="#465362"/>
+
+    <SolidColorBrush x:Key="CheckBoxForeground" Color="#E2E8F0"/>
+
+</ResourceDictionary>

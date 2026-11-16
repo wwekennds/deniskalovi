@@ -1,0 +1,40 @@
+﻿<Window x:Class="Lab05App.SecondWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Второе окно" Height="320" Width="420"
+        WindowStartupLocation="CenterOwner">
+
+    <StackPanel Margin="{StaticResource FormMargin}">
+
+        <!-- Заголовок: локально перебиваем неявный стиль TextBlock -->
+        <TextBlock Text="Проверка общих стилей"
+                   FontSize="20" FontWeight="Bold"
+                   Foreground="{DynamicResource HeaderBrush}"
+                   HorizontalAlignment="Center"
+                   Margin="{StaticResource HeaderMargin}"/>
+
+        <!-- Подпись: подхватит неявный стиль TextBlock (#444444, 13) -->
+        <TextBlock Text="Введите что-нибудь:"
+                   Margin="{StaticResource LabelSpacing}"/>
+
+        <!-- TextBox: подхватит неявный стиль (Padding=4, синяя рамка при фокусе) -->
+        <TextBox Margin="{StaticResource RowSpacing}"
+                 ToolTip="Проверка стиля TextBox"/>
+
+        <!-- PasswordBox: подхватит неявный стиль PasswordBox -->
+        <PasswordBox Margin="{StaticResource RowSpacing}"
+                     ToolTip="Проверка стиля PasswordBox"/>
+
+        <!-- Обычная кнопка: подхватит неявный стиль Button -->
+        <Button Content="Обычная кнопка"
+                HorizontalAlignment="Stretch"
+                Click="OrdinaryButton_Click"/>
+
+        <!-- Кнопка опасного действия: именованный стиль из App.xaml -->
+        <Button Content="Удалить"
+                Style="{StaticResource DangerButton}"
+                HorizontalAlignment="Stretch"
+                Click="DeleteButton_Click"/>
+
+    </StackPanel>
+</Window>
